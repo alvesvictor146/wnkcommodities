@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WNK COMMODITIES — Intermediação Internacional de Commodities</title>
+  <meta name="description" content="A WNK Commodities atua na intermediação estratégica de compra e venda de commodities agrícolas, minerais e energéticas entre produtores brasileiros e compradores internacionais.">
+  
+  <!-- Favicon / Logo -->
+  <link rel="icon" type="image/jpeg" href="assets/img/logo.jpg">
+
+  <!-- Google Fonts & FontAwesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Live Market Ticker -->
+  <div class="ticker-bar">
+    <div class="container ticker-wrap">
+      <div class="ticker-move">
+        <div class="ticker-item"><span class="ticker-code">SUGAR #11 / ICUMSA 45:</span> <span>USD 21.80/lb</span> <span class="ticker-status">▲ +1.4%</span></div>
+        <div class="ticker-item"><span class="ticker-code">SOYBEANS CBOT:</span> <span>USD 1,180/bu</span> <span class="ticker-status">▲ +0.8%</span></div>
+        <div class="ticker-item"><span class="ticker-code">BRENT CRUDE / DIESEL EN590:</span> <span>USD 82.40/bbl</span> <span class="ticker-status">▼ -0.3%</span></div>
+        <div class="ticker-item"><span class="ticker-code">IRON ORE 62% FE:</span> <span>USD 115.50/t</span> <span class="ticker-status">▲ +2.1%</span></div>
+        <div class="ticker-item"><span class="ticker-code">JET FUEL A1 / QAV:</span> <span>USD 98.20/bbl</span> <span class="ticker-status">▲ +0.5%</span></div>
+        <div class="ticker-item"><span class="ticker-code">CORN / MILHO SAFRINHA:</span> <span>USD 450/bu</span> <span class="ticker-status">▲ +0.4%</span></div>
+        <div class="ticker-item"><span class="ticker-code">ARABICA COFFEE:</span> <span>USD 225.00/lb</span> <span class="ticker-status">▲ +1.8%</span></div>
+        <div class="ticker-item"><span class="ticker-code">BEEF & POULTRY SIF:</span> <span>EXPORT REGISTERED</span> <span class="ticker-status">● ACTIVE</span></div>
+        <!-- Duplicated for continuous marquee -->
+        <div class="ticker-item"><span class="ticker-code">SUGAR #11 / ICUMSA 45:</span> <span>USD 21.80/lb</span> <span class="ticker-status">▲ +1.4%</span></div>
+        <div class="ticker-item"><span class="ticker-code">SOYBEANS CBOT:</span> <span>USD 1,180/bu</span> <span class="ticker-status">▲ +0.8%</span></div>
+        <div class="ticker-item"><span class="ticker-code">BRENT CRUDE / DIESEL EN590:</span> <span>USD 82.40/bbl</span> <span class="ticker-status">▼ -0.3%</span></div>
+        <div class="ticker-item"><span class="ticker-code">IRON ORE 62% FE:</span> <span>USD 115.50/t</span> <span class="ticker-status">▲ +2.1%</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#home" class="brand-logo">
+        <img src="assets/img/logo_clean_trans.png" alt="WNK Commodities">
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#commodities" class="nav-link">Commodities</a></li>
+          <li><a href="#processo" class="nav-link">Intermediação</a></li>
+          <li><a href="#documentos" class="nav-link">Documentos & Compliance</a></li>
+          <li><a href="#sobre" class="nav-link">Quem Somos</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Language Switcher -->
+        <div class="lang-selector">
+          <button class="lang-btn active" title="Português">PT</button>
+          <button class="lang-btn" title="English">EN</button>
+          <button class="lang-btn" title="中文">ZH</button>
+        </div>
+
+        <a href="#contato" class="btn-header-cta">
+          <i class="fas fa-handshake"></i>
+          <span>Mesa de Trading</span>
+        </a>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fas fa-globe-americas"></i>
+          <span>Global Commodity Trading & Brokering</span>
+        </div>
+
+        <h1 class="hero-title">
+          Intermediação Internacional de <span class="highlight">Commodities Estratégicas</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          A <strong>WNK Commodities</strong> estrutura negociações seguras e eficientes em mercados agrícolas, minerais e energéticos. Conectamos produtores brasileiros qualificados a compradores internacionais e fornecedores mundiais a grandes volumes no Brasil.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#commodities" class="btn-primary">
+            <i class="fas fa-boxes-stacked"></i>
+            <span>Ver Portfólio de Commodities</span>
+          </a>
+          <a href="#processo" class="btn-outline">
+            <i class="fas fa-shield-halved"></i>
+            <span>Como Operamos</span>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h4>12+</h4>
+            <p>Commodities Principais</p>
+          </div>
+          <div class="stat-item">
+            <h4>100%</h4>
+            <p>Contratos com NCNDA & LOI</p>
+          </div>
+          <div class="stat-item">
+            <h4>Global</h4>
+            <p>Ásia, Oriente Médio e Europa</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-main-card">
+          <img src="assets/img/hero-port.jpg" alt="Exportação de Commodities WNK no Porto">
+          <div class="hero-float-badge">
+            <div class="float-icon">
+              <i class="fas fa-anchor"></i>
+            </div>
+            <div class="float-text">
+              <strong>Logística e Embarque Portuário</strong>
+              <span>Operações em Santos, Paranaguá e Itaqui</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 Pilares WNK -->
+  <section class="pillars-section">
+    <div class="container pillars-grid">
+      <div class="pillar-item">
+        <div class="pillar-icon"><i class="fas fa-wheat-awn"></i></div>
+        <div class="pillar-info">
+          <h5>Agronegócio & Grãos</h5>
+          <p>Açúcar (VHP/ICUMSA), Soja, Milho, Café Arábica/Robusta e Sorgo.</p>
+        </div>
+      </div>
+      <div class="pillar-item">
+        <div class="pillar-icon"><i class="fas fa-drumstick-bite"></i></div>
+        <div class="pillar-info">
+          <h5>Proteína Animal & Lácteos</h5>
+          <p>Bovinos, Suínos, Aves (Cortes Halal & Pés de Frango) e Leite em Pó.</p>
+        </div>
+      </div>
+      <div class="pillar-item">
+        <div class="pillar-icon"><i class="fas fa-oil-well"></i></div>
+        <div class="pillar-info">
+          <h5>Energia & Minérios</h5>
+          <p>Diesel marítimo/rodoviário, Querosene de Aviação (Jet Fuel) e Minério de Ferro.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Commodities Section -->
+  <section class="commodities-section" id="commodities">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfólio Global</span>
+        <h2 class="section-title">Commodities Sob Gestão e Intermediação</h2>
+        <p class="section-subtitle">
+          Atuamos na estruturação comercial completa de compra e venda internacional, com conhecimento aprofundado das especificações técnicas, exigências alfandegárias e certificações sanitárias globais.
+        </p>
+      </div>
+
+      <!-- Sector Filter Nav -->
+      <div class="filter-wrapper">
+        <div class="filter-nav">
+          <button class="filter-btn active" data-filter="all">Todas as Commodities (12)</button>
+          <button class="filter-btn" data-filter="agro">Agrícolas & Grãos</button>
+          <button class="filter-btn" data-filter="protein">Proteína Animal & Lácteos</button>
+          <button class="filter-btn" data-filter="energy">Energia & Mineração</button>
+        </div>
+      </div>
+
+      <!-- Cards Grid -->
+      <div class="commodities-grid" id="commoditiesGrid">
+
+        <!-- 01. Açúcar -->
+        <article class="commodity-card" data-category="agro">
+          <div class="card-image-box">
+            <img src="assets/img/acucar.jpg" alt="Açúcar VHP e ICUMSA para Exportação" loading="lazy">
+            <span class="card-badge-sector">Agrícola</span>
+            <span class="card-badge-market">40% do Mercado Global</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Açúcar (VHP, ICUMSA 45, ICUMSA 150)</h3>
+            <p class="card-desc">
+              O Brasil é o maior produtor e exportador mundial de açúcar, respondendo por cerca de 40% do comércio global. O país domina especialmente o mercado de açúcar VHP (Very High Polarization), açúcar bruto de alta polarização usado como matéria-prima para refino em outros países.
+            </p>
+            <div class="card-specs">
+              <span class="specs-title"><i class="fas fa-sliders"></i> Classificação & Graus</span>
+              <div class="specs-tags">
+                <span class="spec-pill">ICUMSA 45 (Refinado de Alta Pureza)</span>
+                <span class="spec-pill">ICUMSA 150 (Cristal / Processamento Local)</span>
+                <span class="spec-pill">VHP (Very High Polarization)</span>
+              </div>
+            </div>
+            <div class="card-buyers">
+              <span class="buyers-label"><i class="fas fa-ship"></i> Principais Compradores:</span>
+              <p class="buyers-text">China, Bangladesh, Indonésia, Argélia, Nigéria e países do Oriente Médio.</p>
+            </div>
+            <div class="card-insight">
+              <strong><i class="fas fa-lightbulb"></i> Curiosidade & Dinâmica de Mercado:</strong>
+              O Brasil produz açúcar e etanol a partir da mesma matéria-prima (cana-de-açúcar), e a escolha entre destinar a safra para um ou outro depende do preço internacional do açúcar em relação ao petróleo — dinâmica que impacta diretamente a oferta global.
+            </div>
+            <div class="card-footer">
+              <button class="btn-card-interest" data-commodity="Açúcar (VHP, ICUMSA 45, ICUMSA 150)">
+                <i class="fas fa-paper-plane"></i> Tenho Interesse
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 02. Carne Bovina -->
+        <article class="commodity-card" data-category="protein">
+          <div class="card-image-box">
+            <img src="assets/img/carne-bovina.jpg" alt="Carne Bovina para Exportação" loading="lazy">
+            <span class="card-badge-sector">Proteína Animal</span>
+            <span class="card-badge-market">1º Exportador Mundial</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Carne Bovina</h3>
+            <p class="card-desc">
+              O Brasil é o maior exportador mundial de carne bovina, detentor do maior rebanho comercial bovino do planeta — a maior parte criada a pasto, o que representa forte diferencial competitivo em mercados que valorizam produção extensiva e sustentável. Exportações in natura e industrializadas.
+            </p>
+            <div class="card-specs">
+              <span class="specs-title"><i class="fas fa-sliders"></i> Padrões & Certificações</span>
+              <div class="specs-tags">
+                <span class="spec-pill">Cortes In Natura & Desossados</span>
+                <span class="spec-pill">Certificação Halal</span>
+                <span class="spec-pill">Cota Hilton (União Europeia)</span>
+                <span class="spec-pill">Habilitação SIF China</span>
+              </div>
+            </div>
+            <div class="card-buyers">
+              <span class="buyers-label"><i class="fas fa-ship"></i> Principais Compradores:</span>
+              <p class="buyers-text">China (maior comprador isolado), Hong Kong, Egito, Chile e União Europeia.</p>
+            </div>
+            <div class="card-insight">
+              <strong><i class="fas fa-lightbulb"></i> Curiosidade & Dinâmica de Mercado:</strong>
+              O Brasil é o único entre os grandes exportadores mundiais a manter simultaneamente o maior rebanho comercial do mundo e uma das maiores áreas de pastagem contínua — uma combinação de escala e custo que poucos competidores conseguem replicar.
+            </div>
+            <div class="card-footer">
+              <button class="btn-card-interest" data-commodity="Carne Bovina">
+                <i class="fas fa-paper-plane"></i> Tenho Interesse
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 03. Carne Suína -->
+        <article class="commodity-card" data-category="protein">
+          <div class="card-image-box">
+            <img src="assets/img/carne-suina.jpg" alt="Carne Suína Linha de Produção" loading="lazy">
+            <span class="card-badge-sector">Proteína Animal</span>
+            <span class="card-badge-market">Top 4 Mundial</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Carne Suína</h3>
+            <p class="card-desc">
+              O Brasil figura entre os quatro maiores exportadores mundiais de carne suína, com forte concentração produtiva na região Sul — especialmente no estado de Santa Catarina, internacionalmente reconhecido pelo status sanitário diferenciado e de excelência.
+            </p>
+            <div class="card-specs">
+              <span class="specs-title"><i class="fas fa-sliders"></i> Segurança Sanitária</span>
+              <div class="specs-tags">
+                <span class="spec-pill">Área Livre de Peste Suína Clássica</span>
+                <span class="spec-pill">Cortes Congelados Nobres</span>
+                <span class="spec-pill">Rastreabilidade SISBI / SIF</span>
+              </div>
+            </div>
+            <div class="card-buyers">
+              <span class="buyers-label"><i class="fas fa-ship"></i> Principais Compradores:</span>
+              <p class="buyers-text">China, Hong Kong, Filipinas, Singapura e Japão.</p>
+            </div>
+            <div class="card-insight">
+              <strong><i class="fas fa-lightbulb"></i> Curiosidade & Dinâmica de Mercado:</strong>
+              O status de área livre de determinadas patologias (como febre aftosa sem vacinação e peste suína clássica) em polos produtores brasileiros é o fator que mais pesa na abertura e manutenção de mercados exigentes — sanidade animal é tão estratégica quanto o preço.
+            </div>
+            <div class="card-footer">
+              <button class="btn-card-interest" data-commodity="Carne Suína">
+                <i class="fas fa-paper-plane"></i> Tenho Interesse
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 04. Aves & Pés de Frango (Featured) -->
+        <article class="commodity-card card-featured" data-category="protein">
+          <div class="card-image-box">
+            <img src="assets/img/frango-pes.jpg" alt="Aves e Pés de Frango Phoenix Claw" loading="lazy">
+            <span class="card-badge-sector">Proteína Animal</span>
+            <span class="card-badge-market">1º Exportador & Líder Halal</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Aves (Frango) & Destaque: Pés de Frango</h3>
+            <p class="card-desc">
+              O Brasil é o maior exportador mundial de carne de frango há décadas, operando em larga escala com rígido controle sanitário e custos altamente competitivos. O país é o maior fornecedor de frango Halal do planeta para o Oriente Médio.
+            </p>
+            <div class="card-specs">
+              <span class="specs-title"><i class="fas fa-sliders"></i> Destaque de Alta Rentabilidade</span>
+              <div class="specs-tags">
+                <span class="spec-pill">Pés de Frango (Phoenix Claw / Garra de Fênix)</span>
+                <span class="spec-pill">Frango Inteiro Griller</span>
+                <span class="spec-pill">Peito, Coxa & Sobrecoxa</span>
+                <span class="spec-pill">Certificação Halal 100%</span>
+              </div>
+            </div>
+            <div class="card-buyers">
+              <span class="buyers-label"><i class="fas fa-ship"></i> Principais Compradores:</span>
+              <p class="buyers-text">Arábia Saudita, Emirados Árabes Unidos, China, Japão e África do Sul.</p>
+            </div>
+            <div class="card-insight">
+              <strong><i class="fas fa-star"></i> Oportunidade Phoenix Claw:</strong>
+              Enquanto no Brasil o pé de frango é considerado subproduto de baixo valor, na China é iguaria nobre (conhecida como "garra de fênix", presente no dim sum). Essa assimetria de valor transforma o pé de frango em item de altíssima margem via intermediação qualificada.
+            </div>
+            <div class="card-footer">
+              <button class="btn-card-interest" data-commodity="Aves (Frango) e Pés de Frango">
+                <i class="fas fa-paper-plane"></i> Tenho Interesse
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 05. Soja -->
+        <article class="commodity-card" data-category="agro">
+          <div class="card-image-box">
+            <img src="assets/img/soja.jpg" alt="Exportação de Soja no Porto de Santos" loading="lazy">
+            <span class="card-badge-sector">Grãos</span>
+            <span class="card-badge-market">Maior Produtor Global</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Soja em Grãos</h3>
+            <p class="card-desc">
+              O Brasil é o maior produtor e exportador mundial de soja, superando consistentemente concorrentes históricos. A soja brasileira é destinada prioritariamente à produção de farelo para ração animal e óleo vegetal, sendo alicerce da segurança alimentar global.
+            </p>
+            <div class="card-specs">
+              <span class="specs-title"><i class="fas fa-sliders"></i> Especificações Típicas</span>
+              <div class="specs-tags">
+                <span class="spec-pill">GMO & Non-GMO</span>
+                <span class="spec-pill">Alto Teor de Proteína</span>
+                <span class="spec-pill">Embarque a Granel / Navios Panamax & Capesize</span>
+              </div>
+            </div>
+            <div class="card-buyers">
+              <span class="buyers-label"><i class="fas fa-ship"></i> Principais Compradores:</span>
+              <p class="buyers-text">China (+ de dois terços do total), União Europeia, Sudeste Asiático e Oriente Médio.</p>
+            </div>
+            <div class="card-insight">
+              <strong><i class="fas fa-lightbulb"></i> Curiosidade & Dinâmica de Mercado:</strong>
+              A expansão agrícola brasileira converteu o cerrado em um dos polos com maior produtividade por hectare do planeta, conferindo ao país capacidade de fornecimento em volumes inigualáveis nos meses de colheita do hemisfério sul.
+            </div>
+            <div class="card-footer">
+              <button class="btn-card-interest" data-commodity="Soja em Grãos">
+                <i class="fas fa-paper-plane"></i> Tenho Interesse
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 06. Milho -->
+        <article class="commodity-card" data-category="agro">
+          <div class="card-image-box">
+            <img src="assets/img/milho.jpg" alt="Milho para Exportação em Silos Portuários" loading="lazy">
+            <span class="card-badge-sector">Grãos</span>
+            <span class="card-badge-market">Top 2/3 Exportador Global</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Milho Amarelo</h3>
+            <p class="card-desc">
+              O Brasil figura como o segundo ou terceiro maior exportador mundial de milho. O grande trunfo logístico e produtivo é a capacidade de colheita em duas safras anuais (com a safra de inverno "safrinha"), garantindo oferta e liquidez contínua ao mercado internacional.
+            </p>
+            <div class="card-specs">
+              <span class="specs-title"><i class="fas fa-sliders"></i> Destaques Operacionais</span>
+              <div class="specs-tags">
+                <span class="spec-pill">Milho Amarelo Grau 2</span>
+                <span class="spec-pill">Safra Regular & Safrinha</span>
+                <span class="spec-pill">Destinação para Ração & Etanol</span>
+              </div>
+            </div>
+            <div class="card-buyers">
+              <span class="buyers-label"><i class="fas fa-ship"></i> Principais Compradores:</span>
+              <p class="buyers-text">Japão, Irã, Vietnã, Coreia do Sul e Egito.</p>
+            </div>
+            <div class="card-insight">
+              <strong><i class="fas fa-lightbulb"></i> Curiosidade & Dinâmica de Mercado:</strong>
+              A "safrinha", cultivada na mesma área de lavoura imediatamente após a colheita da soja, já responde por mais de 75% da produção brasileira de milho — um modelo avançado de intensificação agrícola sem abertura de novas áreas.
+            </div>
+            <div class="card-footer">
+              <button class="btn-card-interest" data-commodity="Milho Amarelo">
+                <i class="fas fa-paper-plane"></i> Tenho Interesse
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 07. Café -->
+        <article class="commodity-card" data-category="agro">
+          <div class="card-image-box">
+            <img src="assets/img/cafe.jpg" alt="Café Tipo Exportação Embarque no Porto" loading="lazy">
+            <span class="card-badge-sector">Agrícola</span>
+            <span class="card-badge-market">Líder Mundial há 150+ Anos</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Café (Arábica & Conilon / Robusta)</h3>
+            <p class="card-desc">
+              O Brasil é o maior produtor e exportador mundial de café há mais de um século e meio, responsável por cerca de um terço da produção global. Domina tanto cafés finos especiais quanto blends industriais de alta densidade.
+            </p>
+            <div class="card-specs">
+              <span class="specs-title"><i class="fas fa-sliders"></i> Espécies, Cultivares & Peneiras</span>
+              <div class="specs-tags">
+                <span class="spec-pill">Arábica (>70%): Catuaí, Mundo Novo, Bourbon</span>
+                <span class="spec-pill">Conilon/Robusta: Solúveis & Blends Espresso</span>
+                <span class="spec-pill">Peneiras 17/18 e superiores (Cafés Finos)</span>
+                <span class="spec-pill">Grãos Moca (Sabor Concentrado)</span>
+              </div>
+            </div>
+            <div class="card-buyers">
+              <span class="buyers-label"><i class="fas fa-ship"></i> Principais Compradores:</span>
+              <p class="buyers-text">Estados Unidos, Alemanha, Itália, Japão e Bélgica (hubs de redistribuição europeus).</p>
+            </div>
+            <div class="card-insight">
+              <strong><i class="fas fa-lightbulb"></i> Curiosidade & Dinâmica de Mercado:</strong>
+              O Brasil é o único grande polo mundial que cultiva simultaneamente Arábica e Conilon com escala global expressiva, proporcionando flexibilidade ímpar para torrefadores que exigem curvas específicas de torra e aroma.
+            </div>
+            <div class="card-footer">
+              <button class="btn-card-interest" data-commodity="Café (Arábica & Conilon)">
+                <i class="fas fa-paper-plane"></i> Tenho Interesse
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 08. Leite em Pó -->
+        <article class="commodity-card" data-category="protein">
+          <div class="card-image-box">
+            <img src="assets/img/leite-em-po.jpg" alt="Sacas de Leite em Pó 25kg Industrial" loading="lazy">
+            <span class="card-badge-sector">Lácteos</span>
+            <span class="card-badge-market">Top 5 Produtor Mundial</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Leite em Pó & Derivados Lácteos</h3>
+            <p class="card-desc">
+              Com infraestrutura moderna de secagem e laticínios industriais, o Brasil consolida excedentes de exportação em anos de safra favorável, atendendo indústrias alimentícias e programas governamentais de segurança alimentar.
+            </p>
+            <div class="card-specs">
+              <span class="specs-title"><i class="fas fa-sliders"></i> Especificações Técnicas</span>
+              <div class="specs-tags">
+                <span class="spec-pill">Integral WMP (26% a 40% de gordura)</span>
+                <span class="spec-pill">Desnatado SMP (≤ 1,5% gordura / shelf-life estendido)</span>
+                <span class="spec-pill">Instantâneo (com lecitina de soja)</span>
+                <span class="spec-pill">Leitelho e Soro de Leite em Pó</span>
+              </div>
+            </div>
+            <div class="card-buyers">
+              <span class="buyers-label"><i class="fas fa-ship"></i> Principais Destinos:</span>
+              <p class="buyers-text">Mercosul, América Latina, Oriente Médio e Norte da África.</p>
+            </div>
+            <div class="card-insight">
+              <strong><i class="fas fa-lightbulb"></i> Curiosidade & Dinâmica de Mercado:</strong>
+              O Brasil é um dos cinco maiores produtores de leite do mundo, mas historicamente consumia quase tudo internamente. Essa nova onda de excedentes industriais exportáveis representa uma das maiores oportunidades comerciais da década.
+            </div>
+            <div class="card-footer">
+              <button class="btn-card-interest" data-commodity="Leite em Pó & Derivados Lácteos">
+                <i class="fas fa-paper-plane"></i> Tenho Interesse
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 09. Diesel -->
+        <article class="commodity-card" data-category="energy">
+          <div class="card-image-box">
+            <img src="assets/img/diesel.jpg" alt="Carregamento e Barris de Diesel Marítimo" loading="lazy">
+            <span class="card-badge-sector">Energia & Combustíveis</span>
+            <span class="card-badge-market">Commodity Crítica Global</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Diesel (S10, S500 & EN590)</h3>
+            <p class="card-desc">
+              O combustível motriz do agronegócio, transporte multimodal e indústria global. Estruturamos intermediações tanto de cargas importadas para grandes distribuidoras nacionais quanto transações marítimas CIF/FOB internacionais.
+            </p>
+            <div class="card-specs">
+              <span class="specs-title"><i class="fas fa-sliders"></i> Normas Técnicas</span>
+              <div class="specs-tags">
+                <span class="spec-pill">Diesel Ultra-Low Sulfur (EN590 10PPM)</span>
+                <span class="spec-pill">Diesel S10 Rodoviário</span>
+                <span class="spec-pill">Operações Marítimas Ship-to-Ship / Tanques Portuários</span>
+              </div>
+            </div>
+            <div class="card-buyers">
+              <span class="buyers-label"><i class="fas fa-ship"></i> Escopo de Atuação:</span>
+              <p class="buyers-text">Distribuidoras de combustíveis, refinarias independentes e grandes frotistas industriais.</p>
+            </div>
+            <div class="card-insight">
+              <strong><i class="fas fa-lightbulb"></i> Curiosidade & Dinâmica de Mercado:</strong>
+              A cotação internacional do diesel acompanha o Petróleo Brent com uma defasagem sazonal nos mercados spot — conhecer esses ciclos logísticos cria janelas de arbitragem altamente rentáveis para compradores atentos.
+            </div>
+            <div class="card-footer">
+              <button class="btn-card-interest" data-commodity="Diesel (S10, S500 & EN590)">
+                <i class="fas fa-paper-plane"></i> Tenho Interesse
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 10. Querosene de Aviação (QAV / Jet Fuel) -->
+        <article class="commodity-card" data-category="energy">
+          <div class="card-image-box">
+            <img src="assets/img/querosene-aviacao.jpg" alt="Querosene para Aviação QAV Jet Fuel A1" loading="lazy">
+            <span class="card-badge-sector">Energia & Combustíveis</span>
+            <span class="card-badge-market">Logística de Alta Precisão</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Querosene de Aviação (QAV / Jet Fuel A-1)</h3>
+            <p class="card-desc">
+              Insumo estratégico de segurança aeroviária com demanda contínua da aviação comercial e de transporte aéreo cargueiro internacional. Intermediações com fornecedores certificados e conformidade regulatória estrita.
+            </p>
+            <div class="card-specs">
+              <span class="specs-title"><i class="fas fa-sliders"></i> Especificações & Rastreabilidade</span>
+              <div class="specs-tags">
+                <span class="spec-pill">Jet Fuel A-1 / ASTM D1655</span>
+                <span class="spec-pill">Rastreabilidade Rígida de Lote</span>
+                <span class="spec-pill">Certificado de Qualidade Internacional</span>
+              </div>
+            </div>
+            <div class="card-buyers">
+              <span class="buyers-label"><i class="fas fa-ship"></i> Perfil Comprador:</span>
+              <p class="buyers-text">Operadores aéreos, companhias cargueiras e consórcios aeroportuários.</p>
+            </div>
+            <div class="card-insight">
+              <strong><i class="fas fa-lightbulb"></i> Curiosidade & Dinâmica de Mercado:</strong>
+              O combustível de aviação representa frequentemente a maior fatia isolada dos custos operacionais das companhias aéreas. Contratos bem estruturados de fornecimento mitigam oscilações abruptas no preço por assento/km.
+            </div>
+            <div class="card-footer">
+              <button class="btn-card-interest" data-commodity="Querosene de Aviação (QAV / Jet Fuel A-1)">
+                <i class="fas fa-paper-plane"></i> Tenho Interesse
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 11. Sorgo -->
+        <article class="commodity-card" data-category="agro">
+          <div class="card-image-box">
+            <img src="assets/img/sorgo.jpg" alt="Sorgo em Grãos para Exportação" loading="lazy">
+            <span class="card-badge-sector">Grãos</span>
+            <span class="card-badge-market">Crescimento Acelerado</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Sorgo em Grãos</h3>
+            <p class="card-desc">
+              Cultura rústica e resiliente, o sorgo brasileiro tem se tornado uma das commodities com crescimento de exportação mais acelerado para a Ásia, servindo como alternativa eficiente ao milho para nutrição animal e destilação.
+            </p>
+            <div class="card-specs">
+              <span class="specs-title"><i class="fas fa-sliders"></i> Aplicações Industriais</span>
+              <div class="specs-tags">
+                <span class="spec-pill">Ração Animal & Formulação de Proteína</span>
+                <span class="spec-pill">Indústria de Bebidas Destiladas (Baijiu na China)</span>
+                <span class="spec-pill">Resistência à Seca / Safra de Transição</span>
+              </div>
+            </div>
+            <div class="card-buyers">
+              <span class="buyers-label"><i class="fas fa-ship"></i> Principal Destino:</span>
+              <p class="buyers-text">China (principal destino comprador), com novos fluxos para outros polos asiáticos.</p>
+            </div>
+            <div class="card-insight">
+              <strong><i class="fas fa-lightbulb"></i> Curiosidade & Dinâmica de Mercado:</strong>
+              Sua alta tolerância ao estresse hídrico permite aos produtores brasileiros cultivar o sorgo em áreas onde a segunda safra de milho teria risco climático, gerando volumes exportáveis com preços altamente atrativos frente aos EUA e Austrália.
+            </div>
+            <div class="card-footer">
+              <button class="btn-card-interest" data-commodity="Sorgo em Grãos">
+                <i class="fas fa-paper-plane"></i> Tenho Interesse
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 12. Minério de Ferro -->
+        <article class="commodity-card" data-category="energy">
+          <div class="card-image-box">
+            <img src="assets/img/minerio-ferro.jpg" alt="Carregamento de Minério de Ferro no Porto" loading="lazy">
+            <span class="card-badge-sector">Mineração</span>
+            <span class="card-badge-market">2º Maior Exportador Global</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Minério de Ferro (62% e 65% Fe)</h3>
+            <p class="card-desc">
+              O Brasil é o segundo maior exportador de minério de ferro do mundo, com jazidas de padrão premium no Quadrilátero Ferrífero (MG) e no Sistema Norte (PA / Carajás). Minério reconhecido pelo elevado teor de ferro e baixa presença de impurezas.
+            </p>
+            <div class="card-specs">
+              <span class="specs-title"><i class="fas fa-sliders"></i> Tipologia de Embarque</span>
+              <div class="specs-tags">
+                <span class="spec-pill">Granulado / Lump Ore (6,3 a 50mm, >60-61% Fe)</span>
+                <span class="spec-pill">Sínter Feed (0,15 a 6,3mm, 62% a 65% Fe)</span>
+                <span class="spec-pill">Pellet Feed (<0,15mm / menor pegada de carbono)</span>
+                <span class="spec-pill">Pelotas / Pellets (Alto Valor Agregado)</span>
+              </div>
+            </div>
+            <div class="card-buyers">
+              <span class="buyers-label"><i class="fas fa-ship"></i> Mercados Siderúrgicos:</span>
+              <p class="buyers-text">China (maior volume para altos-fornos), Japão, Coreia do Sul e polos industriais europeus.</p>
+            </div>
+            <div class="card-insight">
+              <strong><i class="fas fa-lightbulb"></i> Curiosidade & Dinâmica de Mercado:</strong>
+              O minério de ferro é um dos maiores pilares do superávit da balança comercial brasileira, gerando impacto direto nas reservas cambiais e na cotação do câmbio internacional.
+            </div>
+            <div class="card-footer">
+              <button class="btn-card-interest" data-commodity="Minério de Ferro (62% e 65% Fe)">
+                <i class="fas fa-paper-plane"></i> Tenho Interesse
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Processo de Intermediação (Como Operamos) -->
+  <section class="process-section" id="processo">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Metodologia & Ética</span>
+        <h2 class="section-title">Como Funciona a Nossa Intermediação</h2>
+        <p class="section-subtitle">
+          Construímos pontes sólidas entre a oferta e a demanda internacional. Nossa metodologia garante que compradores e produtores negociem com segurança jurídica, confidencialidade e previsibilidade de entrega.
+        </p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <h4 class="step-title">Alinhamento & Perfil</h4>
+          <p class="step-desc">
+            Analisamos a demanda técnica do comprador (especificações, volume, frequência, incoterm FOB/CIF) ou a capacidade produtiva do fornecedor nacional.
+          </p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">02</div>
+          <h4 class="step-title">Instrumento NCNDA</h4>
+          <p class="step-desc">
+            Formalizamos o acordo de confidencialidade e não-circunvenção para proteger a integridade de todas as partes, intermediários e parceiros envolvidos.
+          </p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">03</div>
+          <h4 class="step-title">LOI & Due Diligence</h4>
+          <p class="step-desc">
+            Emissão da Carta de Intenção (LOI) com os parâmetros do negócio, verificação de conformidade bancária (BCL/SBLC quando aplicável) e habilitações sanitárias.
+          </p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">04</div>
+          <h4 class="step-title">Fechamento & Embarque</h4>
+          <p class="step-desc">
+            Assinatura do SPA (Sales and Purchase Agreement), agendamento do laycan portuário, acompanhamento de inspeção independente (SGS) e despacho marítimo.
+          </p>
+        </div>
+      </div>
+
+      <!-- Trust Banner -->
+      <div class="trust-banner">
+        <div class="trust-content">
+          <h4>Remuneração Exclusiva no Sucesso da Operação</h4>
+          <p>
+            Trabalhamos através de contratos de intermediação com comissão pré-acordada. <strong>Não cobramos nenhum adiantamento nem custos por consultas prévias.</strong> Nossa remuneração só ocorre se, e somente se, a operação for concretizada e liquidada com sucesso.
+          </p>
+        </div>
+        <a href="#contato" class="btn-primary">
+          <i class="fas fa-handshake"></i>
+          <span>Iniciar Consulta</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Documentos & Compliance -->
+  <section class="documents-section" id="documentos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Segurança Jurídica</span>
+        <h2 class="section-title">Modelos Documentais Padrão</h2>
+        <p class="section-subtitle">
+          Utilizamos instrumentos regulamentados pelas normas internacionais da CCI (Câmara de Comércio Internacional) para blindar todas as etapas da negociação.
+        </p>
+      </div>
+
+      <div class="docs-grid">
+        <!-- NCNDA -->
+        <div class="doc-card">
+          <div class="doc-header">
+            <div class="doc-icon"><i class="fas fa-file-shield"></i></div>
+            <div>
+              <span class="doc-badge">Confidencialidade</span>
+              <h3>NCNDA — Non-Circumvention, Non-Disclosure Agreement</h3>
+            </div>
+          </div>
+          <p class="doc-desc">
+            Trata-se de um documento de confidencialidade entre as partes envolvidas em uma operação — seja venda, compra, investimento ou troca de dados de procedência. Este documento visa preservar as partes e garantir que nenhum dos envolvidos seja preterido quando a negociação for concluída com êxito.
+          </p>
+          <button class="btn-doc-download btn-open-modal" data-commodity="Solicitação de Minuta NCNDA">
+            <i class="fas fa-download"></i>
+            <span>Solicitar Modelo de Minuta NCNDA</span>
+          </button>
+        </div>
+
+        <!-- LOI -->
+        <div class="doc-card">
+          <div class="doc-header">
+            <div class="doc-icon"><i class="fas fa-file-contract"></i></div>
+            <div>
+              <span class="doc-badge">Formalização Comercial</span>
+              <h3>Carta de Intenção de Compra / Venda (LOI)</h3>
+            </div>
+          </div>
+          <p class="doc-desc">
+            Documento formal que descreve detalhadamente a intenção de compra ou venda da commodity: especificações exatas do produto, volume pretendido por remessa, porto de destino, modalidade de pagamento (LC, SBLC, TT) e vigência. É a peça-chave para o início seguro da negociação entre as pontas.
+          </p>
+          <button class="btn-doc-download btn-open-modal" data-commodity="Solicitação de Modelo LOI">
+            <i class="fas fa-download"></i>
+            <span>Solicitar Modelo de Carta de Intenção (LOI)</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quem Somos -->
+  <section class="about-section" id="sobre">
+    <div class="container about-grid">
+      <div class="about-image-wrapper">
+        <img src="assets/img/parceria-comercial.jpg" alt="Acompanhamento de Operação Comercial no Porto" class="about-main-img">
+        <div class="about-floating-stat">
+          <strong>24+ Anos</strong>
+          <span>De Tradição e Relacionamento Global</span>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <span class="section-tag" style="background: rgba(197, 155, 64, 0.2); color: var(--wnk-gold-light);">Quem Somos</span>
+        <h2>WNK COMMODITIES: Conectando os Mercados <span>do Brasil ao Mundo</span></h2>
+        
+        <p>
+          Trabalhamos como consultores estratégicos no mercado de commodities, ativos de grande porte e comércio internacional, atendendo clientes que buscam suprimento em escala ou colocação qualificada de safras e produção mineral.
+        </p>
+
+        <p>
+          Atendemos compradores e vendedores que buscam negociações transparentes e realizáveis. Por este motivo, realizamos um trabalho estritamente <em>on-demand</em>, apresentando soluções, produtores e oportunidades desenhados sob medida para as especificações técnicas de cada demanda.
+        </p>
+
+        <p>
+          Nossa trajetória consolidou um extenso know-how de relacionamentos internacionais, bancos, operadores de frete marítimo e órgãos certificadores. Junte-se à WNK Commodities e vamos transformar oportunidades globais em contratos sólidos.
+        </p>
+
+        <ul class="about-pillars-list">
+          <li><i class="fas fa-check-circle"></i> Sigilo e Confidencialidade Rígidos</li>
+          <li><i class="fas fa-check-circle"></i> Acesso Direto a Produtores e Refinarias</li>
+          <li><i class="fas fa-check-circle"></i> Operações em Conformidade Sanitária e Aduaneira</li>
+          <li><i class="fas fa-check-circle"></i> Presença em Toda a Malha Portuária Nacional</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Final de Contato & Cotação -->
+  <section class="cta-section" id="contato">
+    <div class="container">
+      <div class="cta-box">
+        <div class="cta-content">
+          <span class="section-tag">Desk de Negócios</span>
+          <h2>Compra ou Venda de Commodities? Fale com a WNK</h2>
+          <p>
+            Seja você um comprador internacional em busca de fornecimento confiável de commodities brasileiras, ou um produtor nacional buscando novos mercados globais, estruturamos a sua negociação com agilidade, seriedade e precisão técnica.
+          </p>
+          <p>
+            Procuramos trabalhar com parcerias comprometidas com a realidade, oferecendo somente aquilo que realmente está ao nosso alcance operacional.
+          </p>
+          <div style="display: flex; gap: 16px; margin-top: 24px;">
+            <button class="btn-primary btn-open-modal" data-commodity="Consulta Geral de Trading">
+              <i class="fas fa-comments"></i> Abrir Solicitação de Cotação
+            </button>
+          </div>
+        </div>
+
+        <div class="cta-form-card">
+          <h4>Solicitação Rápida de Atendimento</h4>
+          <form id="quickCtaForm">
+            <div class="form-group">
+              <label class="form-label">Nome Completo / Empresa</label>
+              <input type="text" class="form-input" placeholder="Ex: João Silva / Apex Trading Ltd" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">E-mail Corporativo</label>
+              <input type="email" class="form-input" placeholder="contato@suaempresa.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Commodity de Interesse</label>
+              <select class="form-select" required>
+                <option value="">Selecione uma opção...</option>
+                <option value="Açúcar (VHP / ICUMSA 45 / 150)">Açúcar (VHP / ICUMSA 45 / 150)</option>
+                <option value="Carne Bovina">Carne Bovina</option>
+                <option value="Carne Suína">Carne Suína</option>
+                <option value="Aves e Pés de Frango">Aves e Pés de Frango</option>
+                <option value="Soja em Grãos">Soja em Grãos</option>
+                <option value="Milho Amarelo">Milho Amarelo</option>
+                <option value="Café Arábica / Robusta">Café Arábica / Robusta</option>
+                <option value="Leite em Pó">Leite em Pó</option>
+                <option value="Diesel S10 / EN590">Diesel S10 / EN590</option>
+                <option value="Querosene de Aviação (QAV)">Querosene de Aviação (QAV)</option>
+                <option value="Sorgo em Grãos">Sorgo em Grãos</option>
+                <option value="Minério de Ferro">Minério de Ferro</option>
+                <option value="Outras Demandas">Outras Demandas / Parcerias</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Perfil de Atuação</label>
+              <select class="form-select">
+                <option value="Comprador Internacional">Comprador Internacional</option>
+                <option value="Produtor / Fornecedor Nacional">Produtor / Fornecedor Nacional</option>
+                <option value="Mandatário / Consultor Credenciado">Mandatário / Consultor Credenciado</option>
+              </select>
+            </div>
+            <button type="submit" class="btn-form-submit">
+              <i class="fas fa-paper-plane"></i> Enviar Solicitação para a Mesa
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/img/logo_clean_trans.png" alt="WNK Commodities">
+          <p>
+            WNK Commodities — Intermediação estratégica de commodities agrícolas, energéticas e minerais. Conectando os mercados mais dinâmicos do mundo à força produtiva brasileira.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navegação</h5>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#commodities">Commodities</a></li>
+            <li><a href="#processo">Como Operamos</a></li>
+            <li><a href="#documentos">Documentos (NCNDA / LOI)</a></li>
+            <li><a href="#sobre">Quem Somos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Principais Setores</h5>
+          <ul class="footer-links">
+            <li><a href="#commodities">Açúcar VHP & ICUMSA 45</a></li>
+            <li><a href="#commodities">Complexo Soja & Milho</a></li>
+            <li><a href="#commodities">Proteínas (Bovino, Aves, Suíno)</a></li>
+            <li><a href="#commodities">Café e Lácteos</a></li>
+            <li><a href="#commodities">Diesel EN590 & QAV</a></li>
+            <li><a href="#commodities">Minério de Ferro 62-65%</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Desk de Atendimento</h5>
+          <div class="footer-contact-item">
+            <i class="fas fa-location-dot"></i>
+            <span>Av. Brigadeiro Faria Lima, 3477 — Itaim Bibi<br>São Paulo - SP, Brasil</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+55 (11) 3280-8800 (Fictício)</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>contato@wnkcommodities.com (Fictício)</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-clock"></i>
+            <span>Mesa Internacional: 24/7 Desk Comex</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 WNK COMMODITIES. Todos os direitos reservados. Operações de intermediação sob conformidade internacional.</p>
+        <p>Desenvolvido com tecnologia de alta performance para Comércio Exterior.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal "Tenho Interesse" / Solicitação Direta -->
+  <div class="modal-overlay" id="interestModal">
+    <div class="modal-container">
+      <button class="modal-close" id="modalClose" aria-label="Fechar modal">&times;</button>
+      
+      <div class="modal-header">
+        <h3>Manifestação de Interesse Comercial</h3>
+        <p>Preencha os dados abaixo para receber as especificações técnicas, incoterms disponíveis e procedimentos para emissão de LOI / NCNDA.</p>
+      </div>
+
+      <div id="modalSuccess" style="display: none; text-align: center; padding: 20px 0;">
+        <i class="fas fa-circle-check" style="font-size: 3rem; color: #235332; margin-bottom: 16px;"></i>
+        <h4 style="font-size: 1.3rem; color: #0e294a; margin-bottom: 8px;">Solicitação Registrada!</h4>
+        <p style="color: #475569; font-size: 0.95rem;">Nossa mesa de trading internacional entrará em contato em até 24 horas úteis com o dossiê da commodity selecionada.</p>
+      </div>
+
+      <form id="interestForm">
+        <div class="form-group">
+          <label class="form-label">Commodity Selecionada</label>
+          <input type="text" id="modalCommodity" class="form-input" readonly style="background: #f1f5f9; font-weight: 700; color: #0e294a;">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Seu Nome / Cargo</label>
+          <input type="text" class="form-input" placeholder="Ex: Diretor de Suprimentos / Trader" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Empresa / Razão Social</label>
+          <input type="text" class="form-input" placeholder="Ex: Global Trade Logistics Inc." required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">E-mail Corporativo</label>
+          <input type="email" class="form-input" placeholder="seuemail@empresa.com" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Telefone / WhatsApp com DDI</label>
+          <input type="text" class="form-input" placeholder="+55 (11) 99999-9999" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Volume Estimado (MT / BBL) ou Mensagem</label>
+          <input type="text" class="form-input" placeholder="Ex: Demanda de 25.000 MT Spot ou Contrato Anual">
+        </div>
+
+        <button type="submit" class="btn-form-submit" style="margin-top: 10px;">
+          <i class="fas fa-shield-halved"></i> Enviar Manifestação com Sigilo (NCNDA)
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
