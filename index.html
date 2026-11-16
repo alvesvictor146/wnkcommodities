@@ -24,6 +24,8 @@
   <div class="ticker-bar">
     <div class="container ticker-wrap">
       <div class="ticker-move">
+        <div class="ticker-item"><span class="ticker-code">PAGAMENTO:</span> <span>ACEITAMOS SBLC & DLC (TOP 50 BANKS)</span> <span class="ticker-status">● HOMOLOGADO</span></div>
+        <div class="ticker-item"><span class="ticker-code">COMPLIANCE:</span> <span>EXIGÊNCIA DE LOI BANCARIZADA</span> <span class="ticker-status">● OBRIGATÓRIO</span></div>
         <div class="ticker-item"><span class="ticker-code">SUGAR #11 / ICUMSA 45:</span> <span>USD 21.80/lb</span> <span class="ticker-status">▲ +1.4%</span></div>
         <div class="ticker-item"><span class="ticker-code">SOYBEANS CBOT:</span> <span>USD 1,180/bu</span> <span class="ticker-status">▲ +0.8%</span></div>
         <div class="ticker-item"><span class="ticker-code">BRENT CRUDE / DIESEL EN590:</span> <span>USD 82.40/bbl</span> <span class="ticker-status">▼ -0.3%</span></div>
@@ -33,10 +35,10 @@
         <div class="ticker-item"><span class="ticker-code">ARABICA COFFEE:</span> <span>USD 225.00/lb</span> <span class="ticker-status">▲ +1.8%</span></div>
         <div class="ticker-item"><span class="ticker-code">BEEF & POULTRY SIF:</span> <span>EXPORT REGISTERED</span> <span class="ticker-status">● ACTIVE</span></div>
         <!-- Duplicated for continuous marquee -->
+        <div class="ticker-item"><span class="ticker-code">PAGAMENTO:</span> <span>ACEITAMOS SBLC & DLC (TOP 50 BANKS)</span> <span class="ticker-status">● HOMOLOGADO</span></div>
+        <div class="ticker-item"><span class="ticker-code">COMPLIANCE:</span> <span>EXIGÊNCIA DE LOI BANCARIZADA</span> <span class="ticker-status">● OBRIGATÓRIO</span></div>
         <div class="ticker-item"><span class="ticker-code">SUGAR #11 / ICUMSA 45:</span> <span>USD 21.80/lb</span> <span class="ticker-status">▲ +1.4%</span></div>
         <div class="ticker-item"><span class="ticker-code">SOYBEANS CBOT:</span> <span>USD 1,180/bu</span> <span class="ticker-status">▲ +0.8%</span></div>
-        <div class="ticker-item"><span class="ticker-code">BRENT CRUDE / DIESEL EN590:</span> <span>USD 82.40/bbl</span> <span class="ticker-status">▼ -0.3%</span></div>
-        <div class="ticker-item"><span class="ticker-code">IRON ORE 62% FE:</span> <span>USD 115.50/t</span> <span class="ticker-status">▲ +2.1%</span></div>
       </div>
     </div>
   </div>
@@ -60,12 +62,14 @@
       </nav>
 
       <div class="header-actions">
-        <!-- Language Switcher -->
-        <div class="lang-selector">
-          <button class="lang-btn active" title="Português">PT</button>
-          <button class="lang-btn" title="English">EN</button>
-          <button class="lang-btn" title="中文">ZH</button>
+        <!-- Language Switcher: Brasil, Global, China (Mandarim), Dubai / Abu Dhabi (Árabe) -->
+        <div class="lang-selector" id="langSelector">
+          <button class="lang-btn active" data-lang="pt" title="Português (Brasil)">PT</button>
+          <button class="lang-btn" data-lang="en" title="English (Global)">EN</button>
+          <button class="lang-btn" data-lang="zh-CN" title="中文 / 普通话 (China / Mandarim)">中文</button>
+          <button class="lang-btn" data-lang="ar" title="العربية (Abu Dhabi / Dubai / EAU)">العربية</button>
         </div>
+        <div id="google_translate_element" style="display:none;"></div>
 
         <a href="#contato" class="btn-header-cta">
           <i class="fas fa-handshake"></i>
@@ -114,12 +118,16 @@
             <p>Commodities Principais</p>
           </div>
           <div class="stat-item">
-            <h4>100%</h4>
-            <p>Contratos com NCNDA & LOI</p>
+            <h4>SBLC & DLC</h4>
+            <p>Instrumentos Aceitos</p>
+          </div>
+          <div class="stat-item">
+            <h4>LOI Bancarizada</h4>
+            <p>Compliance Mandatório</p>
           </div>
           <div class="stat-item">
             <h4>Global</h4>
-            <p>Ásia, Oriente Médio e Europa</p>
+            <p>China, Dubai / Abu Dhabi e Europa</p>
           </div>
         </div>
       </div>
@@ -663,9 +671,9 @@
 
         <div class="process-step">
           <div class="step-number">03</div>
-          <h4 class="step-title">LOI & Due Diligence</h4>
+          <h4 class="step-title">LOI Bancarizada & Compliance</h4>
           <p class="step-desc">
-            Emissão da Carta de Intenção (LOI) com os parâmetros do negócio, verificação de conformidade bancária (BCL/SBLC quando aplicável) e habilitações sanitárias.
+            Exigência mandatória de Carta de Intenção (LOI) devidamente bancarizada (com BCL / confirmação bancária RWA). Aceitamos como instrumentos internacionais de garantia e liquidação: <strong>SBLC (Standby Letter of Credit / SBCL)</strong> e <strong>DLC (Documentary Letter of Credit)</strong> irrevogáveis e transferíveis, emitidas por bancos Top 50 mundiais.
           </p>
         </div>
 
@@ -716,29 +724,49 @@
             </div>
           </div>
           <p class="doc-desc">
-            Trata-se de um documento de confidencialidade entre as partes envolvidas em uma operação — seja venda, compra, investimento ou troca de dados de procedência. Este documento visa preservar as partes e garantir que nenhum dos envolvidos seja preterido quando a negociação for concluída com êxito.
+            Documento de confidencialidade estrita entre as partes envolvidas em uma operação — compra, venda, investimento ou troca de dados de procedência. Visa preservar compradores, produtores e mandatários, garantindo segurança jurídica durante todo o ciclo comercial.
           </p>
           <button class="btn-doc-download btn-open-modal" data-commodity="Solicitação de Minuta NCNDA">
             <i class="fas fa-download"></i>
-            <span>Solicitar Modelo de Minuta NCNDA</span>
+            <span>Solicitar Minuta NCNDA</span>
           </button>
         </div>
 
-        <!-- LOI -->
-        <div class="doc-card">
+        <!-- LOI Bancarizada -->
+        <div class="doc-card" style="border: 2px solid var(--wnk-gold);">
           <div class="doc-header">
-            <div class="doc-icon"><i class="fas fa-file-contract"></i></div>
+            <div class="doc-icon" style="background: rgba(35, 83, 50, 0.12); color: var(--wnk-green);"><i class="fas fa-building-columns"></i></div>
             <div>
-              <span class="doc-badge">Formalização Comercial</span>
-              <h3>Carta de Intenção de Compra / Venda (LOI)</h3>
+              <span class="doc-badge" style="background: rgba(197, 155, 64, 0.15); color: var(--wnk-gold-dark);">Exigência Obrigatória</span>
+              <h3>LOI Bancarizada (Carta de Intenção)</h3>
             </div>
           </div>
           <p class="doc-desc">
-            Documento formal que descreve detalhadamente a intenção de compra ou venda da commodity: especificações exatas do produto, volume pretendido por remessa, porto de destino, modalidade de pagamento (LC, SBLC, TT) e vigência. É a peça-chave para o início seguro da negociação entre as pontas.
+            Documento formal emitido pelo comprador com <strong>respaldo e endosso bancário (BCL / Bank Comfort Letter ou RWA)</strong>. Descreve detalhadamente o produto, especificação, volume mensal/spot, porto de destino (CIF/FOB) e banco pagador. É o requisito indispensável para emissão da FCO e do SPA.
           </p>
-          <button class="btn-doc-download btn-open-modal" data-commodity="Solicitação de Modelo LOI">
+          <button class="btn-doc-download btn-open-modal" data-commodity="Modelo de LOI Bancarizada">
             <i class="fas fa-download"></i>
-            <span>Solicitar Modelo de Carta de Intenção (LOI)</span>
+            <span>Solicitar Modelo LOI Bancarizada</span>
+          </button>
+        </div>
+
+        <!-- Instrumentos Financeiros SBLC & DLC -->
+        <div class="doc-card">
+          <div class="doc-header">
+            <div class="doc-icon" style="background: rgba(14, 41, 74, 0.1); color: var(--wnk-navy);"><i class="fas fa-file-invoice-dollar"></i></div>
+            <div>
+              <span class="doc-badge">Liquidação & Garantia</span>
+              <h3>Instrumentos: Aceitamos SBLC & DLC</h3>
+            </div>
+          </div>
+          <p class="doc-desc">
+            Trabalhamos com os principais instrumentos financeiros de comércio exterior emitidos por bancos Top 50 mundiais:
+            <br>• <strong>DLC (Documentary Letter of Credit):</strong> Carta de Crédito Documentária irrevogável, transferível e liquidada contra BL + laudo SGS.
+            <br>• <strong>SBLC / SBCL (Standby Letter of Credit):</strong> Garantia financeira internacional de alta liquidez para contratos de longo prazo.
+          </p>
+          <button class="btn-doc-download btn-open-modal" data-commodity="Procedimento Bancário (SBLC / DLC)">
+            <i class="fas fa-shield-halved"></i>
+            <span>Consultar Requisitos SBLC / DLC</span>
           </button>
         </div>
       </div>
@@ -955,16 +983,45 @@
         </div>
 
         <div class="form-group">
-          <label class="form-label">Volume Estimado (MT / BBL) ou Mensagem</label>
+          <label class="form-label">Instrumento Financeiro Pretendido</label>
+          <select class="form-select" id="modalInstrument">
+            <option value="DLC">DLC — Documentary Letter of Credit</option>
+            <option value="SBLC">SBLC / SBCL — Standby Letter of Credit</option>
+            <option value="DLC_SBLC">DLC + SBLC</option>
+            <option value="OUTRO">Outra modalidade bancária internacional</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Volume Estimado (MT / BBL) ou Demanda</label>
           <input type="text" class="form-input" placeholder="Ex: Demanda de 25.000 MT Spot ou Contrato Anual">
         </div>
 
+        <div class="form-group" style="background: rgba(197, 155, 64, 0.08); padding: 10px 12px; border-radius: var(--radius-sm); border: 1px solid rgba(197, 155, 64, 0.25);">
+          <label style="display: flex; align-items: flex-start; gap: 10px; font-size: 0.82rem; color: #1e293b; cursor: pointer; margin-bottom: 0;">
+            <input type="checkbox" required checked style="margin-top: 3px; accent-color: var(--wnk-green);">
+            <span>Confirmo ciência da obrigatoriedade de <strong>LOI Bancarizada</strong> (com endosso / BCL de banco de 1ª linha) para emissão de FCO e contrato.</span>
+          </label>
+        </div>
+
         <button type="submit" class="btn-form-submit" style="margin-top: 10px;">
-          <i class="fas fa-shield-halved"></i> Enviar Manifestação com Sigilo (NCNDA)
+          <i class="fas fa-shield-halved"></i> Enviar Manifestação de Interesse (NCNDA)
         </button>
       </form>
     </div>
   </div>
+
+  <!-- Google Translate Element & Loader -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'pt',
+        includedLanguages: 'pt,en,zh-CN,ar',
+        autoDisplay: false
+      }, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
   <!-- JavaScript -->
   <script src="assets/js/main.js"></script>

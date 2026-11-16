@@ -160,6 +160,7 @@ button, input, select, textarea {
   border-bottom: 1px solid rgba(197, 155, 64, 0.25);
   box-shadow: 0 4px 15px rgba(14, 41, 74, 0.05);
   z-index: 99;
+  direction: ltr !important;
   transition: var(--transition-smooth);
 }
 
@@ -168,12 +169,15 @@ button, input, select, textarea {
   align-items: center;
   justify-content: space-between;
   height: 84px;
+  direction: ltr !important;
 }
 
 .brand-logo {
   display: flex;
   align-items: center;
   gap: 14px;
+  margin-right: 36px;
+  flex-shrink: 0;
 }
 
 .brand-logo img {
@@ -225,11 +229,11 @@ button, input, select, textarea {
 .lang-selector {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
   background: var(--bg-subtle);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-full);
-  padding: 4px 10px;
+  padding: 3px 8px;
   font-size: 0.78rem;
   font-weight: 700;
   color: var(--wnk-navy);
@@ -241,13 +245,86 @@ button, input, select, textarea {
   cursor: pointer;
   color: var(--text-muted);
   font-weight: 600;
-  padding: 2px 6px;
-  border-radius: var(--radius-sm);
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
   transition: var(--transition-smooth);
+  font-size: 0.76rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .lang-btn.active, .lang-btn:hover {
   background: var(--wnk-navy);
+  color: #fff;
+}
+
+/* Hide default Google Translate widgets */
+.goog-te-banner-frame.skiptranslate, 
+.goog-te-banner-frame,
+.skiptranslate iframe {
+  display: none !important;
+  visibility: hidden !important;
+}
+body {
+  top: 0px !important;
+}
+#goog-gt-tt, .goog-tooltip, .goog-tooltip:hover {
+  display: none !important;
+}
+/* ==========================================================================
+   RTL SUPPORT (ÁRABE / DUBAI / ABU DHABI)
+   ========================================================================== */
+[dir="rtl"] {
+  text-align: right;
+  direction: rtl;
+}
+
+[dir="rtl"] .pillar-item {
+  border-left: none;
+  border-right: 4px solid var(--wnk-gold);
+}
+
+[dir="rtl"] .pillar-item:nth-child(2) {
+  border-right-color: var(--wnk-green);
+}
+
+[dir="rtl"] .pillar-item:nth-child(3) {
+  border-right-color: var(--wnk-navy);
+}
+
+[dir="rtl"] .hero-float-badge {
+  left: auto;
+  right: 20px;
+}
+
+[dir="rtl"] .card-badge-sector {
+  left: auto;
+  right: 14px;
+}
+
+[dir="rtl"] .card-badge-market {
+  right: auto;
+  left: 14px;
+}
+
+[dir="rtl"] .card-insight {
+  border-left: none;
+  border-right: 3px solid var(--wnk-gold);
+  border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+}
+
+[dir="rtl"] .about-floating-stat {
+  right: auto;
+  left: -20px;
+  border-left: none;
+  border-right: 5px solid var(--wnk-gold);
+}
+
+[dir="rtl"] .footer-col h5::after {
+  left: auto;
+  right: 0;
+}
   color: #fff;
 }
 
@@ -401,8 +478,8 @@ button, input, select, textarea {
 
 .hero-stats {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
   padding-top: 24px;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
@@ -946,8 +1023,8 @@ button, input, select, textarea {
 
 .docs-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
   margin-top: 40px;
 }
 

@@ -149,20 +149,72 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Language Switcher Demonstration
-  const langBtns = document.querySelectorAll('.lang-btn');
-  langBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      langBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const lang = btn.textContent.trim();
-      if (lang === 'EN') {
-        document.title = 'Commodities — WNK Commodities | Global Intermediation';
-      } else if (lang === 'ZH') {
-        document.title = '大宗商品国际贸易 — WNK Commodities';
+  // Language Switcher Logic (PT, EN, ZH-CN, AR)
+  function applyLanguage(langCode) {
+    document.querySelectorAll('.lang-btn').forEach(b => {
+      if (b.getAttribute('data-lang') === langCode) {
+        b.classList.add('active');
       } else {
-        document.title = 'Commodities — WNK Commodities | Intermediação Internacional';
+        b.classList.remove('active');
       }
+    });
+
+    if (langCode === 'zh-CN') {
+      document.title = 'WNK COMMODITIES — 大宗商品国际贸易与居间服务 (中国/Mandarin)';
+      document.documentElement.removeAttribute('dir');
+    } else if (langCode === 'ar') {
+      document.title = 'WNK COMMODITIES — الوساطة الدولية للسلع الاستراتيجية (دبي / أبوظبي)';
+      document.documentElement.setAttribute('dir', 'rtl');
+    } else if (langCode === 'en') {
+      document.title = 'WNK COMMODITIES — Global Strategic Commodity Intermediation';
+      document.documentElement.removeAttribute('dir');
+    } else {
+      document.title = 'WNK COMMODITIES — Intermediação Internacional de Commodities';
+      document.documentElement.removeAttribute('dir');
+    }
+
+    // Set cookie for Google Translate
+    const domainPath = window.location.pathname;
+    if (langCode === 'pt') {
+      document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+      document.cookie = `googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=${domainPath};`;
+    } else {
+      document.cookie = `googtrans=/pt/${langCode}; path=/;`;
+      document.cookie = `googtrans=/pt/${langCode}; path=${domainPath};`;
+    }
+
+    // Trigger Google Translate select element if present
+    const select = document.querySelector('.goog-te-combo');
+    if (select) {
+      select.value = langCode === 'pt' ? '' : langCode;
+      select.dispatchEvent(new Event('change'));
+    } else {
+      let attempts = 0;
+      const interval = setInterval(() => {
+        const combo = document.querySelector('.goog-te-combo');
+        if (combo) {
+          combo.value = langCode === 'pt' ? '' : langCode;
+          combo.dispatchEvent(new Event('change'));
+          clearInterval(interval);
+        }
+        attempts++;
+        if (attempts > 12) clearInterval(interval);
+      }, 250);
+    }
+  }
+
+  // Restore language if previously chosen in cookie
+  const match = document.cookie.match(/googtrans=\/pt\/([a-zA-Z\-]+)/);
+  if (match && match[1]) {
+    setTimeout(() => applyLanguage(match[1]), 300);
+  }
+
+  // Click handler on lang buttons
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const lang = btn.getAttribute('data-lang') || 'pt';
+      applyLanguage(lang);
     });
   });
 
